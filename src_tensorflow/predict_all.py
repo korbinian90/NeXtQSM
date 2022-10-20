@@ -64,20 +64,20 @@ if __name__ == "__main__":
     )
     
     parser.add_argument(
-        'phase',
+        '--phase',
         help='Unwrapped and normalized phase image'
     )
     parser.add_argument(
-        'mask',
+        '--mask',
         help='Brain mask'
     )
     parser.add_argument(
-        'out_file',
+        '--out_file',
         help='QSM output'
     )
     parser.add_argument(
         '--checkpoint',
-        default='../checkpoints/zdir_calc-HR',
+        default='/opt/nextqsm/checkpoints/zdir_calc-HR',
         help='A checkpoint for the pretrained net'        
     )
     
